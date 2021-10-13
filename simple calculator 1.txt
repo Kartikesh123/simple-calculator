@@ -1,0 +1,57 @@
+//l1201-kartikesh Ambavade
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    char ch;
+    int num1,num2,result,sum;
+    int i,fact=1;
+
+    printf("choose the operator(+,-,*,/,^,!):");
+    scanf("%c",&ch);
+
+    printf("Enter first value or x:");
+    scanf("%d",&num1);
+    printf("Enter second value or y:");
+    scanf("%d",&num2);
+    switch (ch)
+    {
+    case '+':
+        printf("%d +%d = %d",num1,num2,num1+num2);
+
+        break;
+
+    case '-':
+        printf("%d - %d = %d \n",num1,num2,num1-num2);
+    
+
+        break;
+
+    case '*':
+        printf("%d * %d = %d",num1,num2,num1*num2);
+        break;
+
+    case '/':
+        printf("%d / %d = %d",num1,num2,num1/num2);
+        break;
+
+    case '^' :
+        result = pow(num1,num2);
+        printf("%d^%d = %d\n",num1,num2,result);
+        break;
+
+    case '!':
+        for(i=1;i<=num1;i++)
+
+{
+    fact = fact*i;
+}
+
+printf("fact is %d\n :",fact);
+
+    }
+
+    return 0;
+}
+
